@@ -1,0 +1,2 @@
+The CUI_DEVICES-PJ-102A model was provided by CUI Devices.
+It was recolored to better match the other components, but it is otherwise unchanged.
