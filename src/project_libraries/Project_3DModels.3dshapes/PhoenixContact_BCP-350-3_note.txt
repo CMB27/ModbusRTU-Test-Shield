@@ -1,0 +1,2 @@
+The PhoenixContact_BCP-350-3 model was provided by Phoenix Contact.
+It was recolored to better match the other components, but it is otherwise unchanged.
