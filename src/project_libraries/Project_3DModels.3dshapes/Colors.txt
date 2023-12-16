@@ -1,2 +1,4 @@
 Black: #1f1f1f
 Gold: #ffcf5f
+Tin: #cccccc
+White: #ffffff
