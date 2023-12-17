@@ -1,2 +1,0 @@
-The FCI_54601-906WPLF model was provided by Amphenol Communications Solutions.
-It was recolored to better match the other components, but it is otherwise unchanged.

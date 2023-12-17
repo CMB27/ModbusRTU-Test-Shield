@@ -1,0 +1,23 @@
+The CK_OS202011MS2QN1 model was provided by C&K (Littelfuse) as a model for OS202011MS2QS1.
+Some surfaces were split and it was recolored, but no geometry changes were made.
+
+The FCI_54601-906WPLF model was provided by Amphenol Communications Solutions.
+It was recolored, but it is otherwise unchanged.
+
+The Piher_PT10MV10 model was provided by Piher (Amphenol).
+It was recolored, but it is otherwise unchanged.
+
+The Piher_JPEPL6052INI model was created from a model of a Piher PT10 series 5115 knob provided by Piher (Amphenol).
+This model was modified to better approximate a white 6052 knob.
+
+The PhoenixContact_BCH-350H-3 and PhoenixContact_BCP-350-3 models were provided by Phoenix Contact.
+
+
+
+The colors used to recolor the parts are as follows.
+Black: #1f1f1f
+Gold: #ffcf5f
+Tin: #cccccc
+White: #ffffff
+Brown: #8b4417
+
