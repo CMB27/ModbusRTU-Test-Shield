@@ -62,13 +62,13 @@
   (pad "1" thru_hole oval (at -3.5 -6) (size 1.8 3.6) (drill 1.2) (layers "*.Cu" "*.Mask") (tstamp 66b3aced-e861-4b27-8ecc-87e054de996c))
   (pad "2" thru_hole oval (at 0 -6) (size 1.8 3.6) (drill 1.2) (layers "*.Cu" "*.Mask") (tstamp c87d2d6a-fa58-4334-9814-32139e304ec4))
   (pad "3" thru_hole oval (at 3.5 -6) (size 1.8 3.6) (drill 1.2) (layers "*.Cu" "*.Mask") (tstamp 30c3430d-5a61-4d91-aa97-0f4222a491cb))
-  (model "${KICAD6_3DMODEL_DIR}/Connector_Phoenix_MC.3dshapes/PhoenixContact_MC_1,5_3-G-3.5_1x03_P3.50mm_Horizontal.wrl"
-    (offset (xyz -3.5 6 0))
+  (model "${KIPRJMOD}/project_libraries/Project_3DModels.3dshapes/PhoenixContact_BCP-350-3.step"
+    (offset (xyz -5.6 -11 -3.4))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${KIPRJMOD}/project_libraries/Project_3DModels.3dshapes/PhoenixContact_BCP-350-3.step"
-    (offset (xyz -5.6 -11 -3.4))
+  (model "${KIPRJMOD}/project_libraries/Project_3DModels.3dshapes/PhoenixContact_BCH-350H-3.step"
+    (offset (xyz -5.825 -2 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
