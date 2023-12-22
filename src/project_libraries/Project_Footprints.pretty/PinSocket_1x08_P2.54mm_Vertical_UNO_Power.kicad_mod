@@ -79,7 +79,7 @@
   (pad "6" thru_hole circle (at 0 12.7) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp c640108b-84c1-4331-a501-3751a283c2b6))
   (pad "7" thru_hole circle (at 0 15.24) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 1dcab441-9e3d-4dd9-8098-ba0091733647))
   (pad "8" thru_hole circle (at 0 17.78) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (tstamp ccfb2178-58eb-4be9-9805-5c1b17dcddb6))
-  (model "${KIPRJMOD}/project_libraries/Project_3DModels.3dshapes/ESW-108-33-L-S.step"
+  (model "${KIPRJMOD}/project_libraries/Project_3DModels.3dshapes/GCT_SP-140520-08-001.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
