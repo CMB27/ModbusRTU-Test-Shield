@@ -485,11 +485,6 @@
           "name": "Description",
           "url": false,
           "visible": false
-        },
-        {
-          "name": "Item",
-          "url": false,
-          "visible": false
         }
       ],
       "intersheets_ref_own_page": false,
