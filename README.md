@@ -93,5 +93,5 @@ Below are some electronics suppliers I have used in the past:
 - [Octopart](https://octopart.com/) is not a supplier per se; it is essenitally an electronic component search engine.
   This can be a very helpful tool when looking for parts, especially somewhat unusual ones, like extended socket headers.
 
-All of these suppliers have a feature on their repecive websites where you can upload a spreadsheet file, such as [ModbusRTU-Test-Shield-BOM.csv](ModbusRTU-Test-Shield-BOM.csv), to populate the cart or find parts.
+All of these suppliers have a feature on their respecive websites where you can upload a spreadsheet file, such as [ModbusRTU-Test-Shield-BOM.csv](ModbusRTU-Test-Shield-BOM.csv), to populate the cart or find parts.
 
