@@ -7,6 +7,7 @@
   (title_block
     (title "ModbusRTU Test Shield")
     (date "2023-12-26")
+    (rev "0.0.1")
     (company "Designer: C. M. Bulliner")
     (comment 2 "OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.")
     (comment 3 "This document is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING")
