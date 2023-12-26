@@ -7,11 +7,11 @@
   (property "ki_description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)")
   (property "ki_keywords" "connector")
   (attr through_hole)
-  (fp_text reference "REF**" (at 0 -2.77) (layer "F.SilkS") hide
+  (fp_text reference "REF**" (at 0 6.35 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp c2660572-86dd-4478-a02e-61ffe2530842)
   )
-  (fp_text value "PinSocket_1x06_P2.54mm_Vertical_UNO_Analog" (at -3.81 6.35 90) (layer "F.Fab") hide
+  (fp_text value "PinSocket_1x06_P2.54mm_Vertical_UNO_Analog" (at -2.54 6.35 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 05ce255e-c2cb-4b79-a098-b6f3e1744972)
   )
@@ -38,10 +38,6 @@
   (fp_text user "A3" (at 1.905 7.62 unlocked) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     (tstamp e0d3c25c-b027-4b94-b49b-52c08493c9dd)
-  )
-  (fp_text user "${REFERENCE}" (at 0 6.35 90) (layer "F.Fab")
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp 9a35705c-e85f-45b2-9b21-d8ca50be4a21)
   )
   (fp_line (start -1.33 -1.584) (end -1.33 14.284)
     (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp e5726ca4-9826-4c78-b2f6-66f525dd1a4c))

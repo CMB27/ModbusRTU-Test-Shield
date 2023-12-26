@@ -7,11 +7,11 @@
   (property "ki_description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)")
   (property "ki_keywords" "connector")
   (attr through_hole)
-  (fp_text reference "J3" (at 0 -2.77) (layer "F.SilkS") hide
+  (fp_text reference "J3" (at 0 8.89 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp f41c54ca-8d1f-4d14-932a-131ec9985c6f)
   )
-  (fp_text value "PinSocket_1x08_P2.54mm_Vertical_UNO_Power" (at -3.81 8.89 90) (layer "F.Fab") hide
+  (fp_text value "PinSocket_1x08_P2.54mm_Vertical_UNO_Power" (at -2.54 8.89 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 41520aaf-99b5-4bed-8dbf-2d7ccac9bad1)
   )
@@ -42,10 +42,6 @@
   (fp_text user "VIN" (at 1.905 17.78 unlocked) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
     (tstamp e80484fb-cf43-4b47-8239-eccf74d05628)
-  )
-  (fp_text user "${REFERENCE}" (at 0 8.89 -90) (layer "F.Fab")
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp ab430c4c-ef52-4e26-99f1-986c978bbe4a)
   )
   (fp_line (start -1.33 -1.584) (end -1.33 19.364)
     (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 7fab76f1-c5f6-411f-add8-6a4db0a2eba4))

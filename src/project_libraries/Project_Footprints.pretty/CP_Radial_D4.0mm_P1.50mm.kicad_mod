@@ -213,8 +213,8 @@
     (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab") (tstamp 300feaf1-414b-473f-9885-c6f6a9726611))
   (pad "1" thru_hole roundrect (at -0.75 0) (size 1.2 1.2) (drill 0.6) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.25) (tstamp cbd32678-569c-433d-a760-ff0ceca17a5f))
   (pad "2" thru_hole circle (at 0.75 0) (size 1.2 1.2) (drill 0.6) (layers "*.Cu" "*.Mask") (tstamp 2eb83d10-e016-4993-8a61-ebb5ab687ba9))
-  (model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D4.0mm_P1.50mm.wrl"
-    (offset (xyz -0.75 0 0))
+  (model "${KIPRJMOD}/project_libraries/Project_3DModels.3dshapes/Kemet_ESSxxxMxxxAB2xx.step"
+    (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
