@@ -2208,11 +2208,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom) (href "https://github.com/CMB27/ModbusRTU-Test-Shield"))
     (uuid 8fc27744-ff76-44b4-84bb-0c6ab7d55cdc)
   )
-  (text "All the UNO interface headers can be purchased as Sparkfun PRT-11417."
-    (at 27.94 88.9 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid e2645ed0-6eaf-43b4-8d20-c820cf66e03f)
-  )
 
   (label "HARD_RX" (at 91.44 76.2 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
