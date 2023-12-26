@@ -11,10 +11,23 @@ The Piher_JPEPL6052INI model was created from a model of a Piher PT10 series 511
 This model was modified to better approximate a white 6052 knob.
 
 The PhoenixContact_BCH-350H-3 and PhoenixContact_BCP-350-3 models were provided by Phoenix Contact.
+No changes were made.
+
+The following models were taken from the KiCad 3D Models library (Version 5.1.10):
+D_DO-35_SOD27_P7.62mm_Horizontal
+D_DO-41_SOD81_P10.16mm_Horizontal
+DIP-8_W7.62mm
+DIP-8_W7.62mm_Socket
+DIP-16_W7.62mm
+DIP-16_W7.62mm_Socket
+R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+SW_PUSH_6mm
+No changes were made to any of these models.
+
+All other models were created from scratch.
 
 
-
-The colors used to recolor the parts are as follows.
+The colors used to recolor the parts are as follows:
 Black: #1f1f1f
 Gold: #ffcf5f
 Tin: #cccccc
