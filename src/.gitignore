@@ -28,5 +28,3 @@ fp-info-cache
 *.xml
 *.csv
 
-# html interactive BOM settings file
-ibom.config.ini

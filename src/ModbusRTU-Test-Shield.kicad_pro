@@ -1,6 +1,64 @@
 {
   "board": {
-    "3dviewports": [],
+    "3dviewports": [
+      {
+        "name": "Angled",
+        "ww": 1.0,
+        "wx": -20.077579498291016,
+        "wy": -3.3553037643432617,
+        "wz": -13.184674263000488,
+        "xw": 0.0,
+        "xx": 0.6427791118621826,
+        "xy": 0.5868313312530518,
+        "xz": -0.49240636825561523,
+        "yw": 0.0,
+        "yx": -0.7660515904426575,
+        "yy": 0.49239543080329895,
+        "yz": -0.41317281126976013,
+        "zw": 0.0,
+        "zx": -4.107217137061525e-06,
+        "zy": 0.642787516117096,
+        "zz": 0.766044557094574
+      },
+      {
+        "name": "Bottom",
+        "ww": 1.0,
+        "wx": 16.260730743408203,
+        "wy": 12.565109252929688,
+        "wz": -15.999714851379395,
+        "xw": 0.0,
+        "xx": -1.0,
+        "xy": 0.0,
+        "xz": -1.7555552403791808e-05,
+        "yw": 0.0,
+        "yx": 0.0,
+        "yy": 1.0,
+        "yz": 0.0,
+        "zw": 0.0,
+        "zx": 1.7555552403791808e-05,
+        "zy": 0.0,
+        "zz": -1.0
+      },
+      {
+        "name": "Top",
+        "ww": 1.0,
+        "wx": -16.260730743408203,
+        "wy": 12.565109252929688,
+        "wz": -16.0,
+        "xw": 0.0,
+        "xx": 1.0,
+        "xy": 0.0,
+        "xz": 0.0,
+        "yw": 0.0,
+        "yx": 0.0,
+        "yy": 1.0,
+        "yz": 0.0,
+        "zw": 0.0,
+        "zx": 0.0,
+        "zy": 0.0,
+        "zz": 1.0
+      }
+    ],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.15,
@@ -455,7 +513,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "../extras/ModbusRTU-Test-Shield.step",
+      "step": "../../../../extras/ModbusRTU-Test-Shield.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -513,7 +571,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "./",
+    "plot_directory": "../",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
