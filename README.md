@@ -91,7 +91,6 @@ Generally you will need to upload the upload the [gerber and drill files](gerber
 
 
 ### Purchase Components
-#### Bill of Materials
 
 | Reference    | Qty | Manufacturer           | Part Number           | Description                         | Notes                                                                                         |
 |--------------|----:|------------------------|-----------------------|-------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -134,9 +133,8 @@ All of these suppliers have a feature on their respective websites where you can
 
 
 ## Assembly
-### Tools and Supplies
-If you are assembling the ModbusRTU Test Shield yourself, you will need the following tools and supplies:
 
+### Tools and Supplies
 | Item              | Optional | Notes                                                                                                                                              |
 |-------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Soldering Iron    | No       | Make sure you use a good quality soldering iron. A poor quality soldering iron will give you a miserable soldering experience.                     |
@@ -172,10 +170,10 @@ These steps go through soldering each component, starting with the shortest.
 > [!NOTE]
 > There are two (2) resistor values used.
 > 
-> The 8 resistors furthest from the diode footprints (D1-D8) are 330 Ohm resistors.  
+> The 8 resistors furthest from the diode footprints (R1-R8) are 330 Ohm resistors.  
 > The color code on these will be orange, orange, brown, gold.
 > 
-> The resistor right next to the diode footprints (D9) is a 10K Ohm resistor.  
+> The resistor right next to the diode footprints (R9) is a 10K Ohm resistor.  
 > The color code on this resistor will be brown, black, orange, gold.
 
 - Bend the resistor leads so that the part will fit in the footprint.
@@ -185,9 +183,11 @@ These steps go through soldering each component, starting with the shortest.
 
 #### 2. D9-D11 (Diodes)
 > [!NOTE]
-> Two different diode parts are used on this board.  
-> The smaller signal diodes are placed next to the resistors.  
-> The larger power diode is placed right next to the RJ12 footprint.
+> Two different diode parts are used on this board.
+> 
+> The smaller signal diodes (D9, D10) are placed next to the resistors.
+> 
+> The larger power diode (D11) is placed right next to the RJ12 footprint.
 
 - Bend the diode leads so they will fit their respective footprints.
 - Place the diodes, making sure that the side with the line closest to it (the cathode) is facing the squarish pad.
