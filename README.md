@@ -7,17 +7,53 @@ A shield for Arduino boards that provides an RS-485 transceiver, RS-232 transcei
 - A 3-position removable screw terminal is used as the RS-485 interface.
 - A RJ12 connector is used as the RS-232 inteface. The pinout of this connector is designed to make it compatible with Automation Direct products.
 - The potentiomter knobs can be easily removed so you can stack other shields on top of this one.
-- There is a switch to switch the `RX` pin beetween D0 and D10 and the `TX` pin betweeen D1 and D11 respectively.
-  This is intended to allow you to easily switch between using a `HardwareSerial` port or a `SoftwareSerial` port.
+- There is a switch to easily change between using a `HardwareSerial` port or a `SoftwareSerial` port.
+- The selected serial port is connected to both the RS-485 and RS-232 transceivers, so not confugration changes are needed to switch between them.
 
 > [!NOTE]
 > This design is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
 > 
-> The `RX` signals from the RS-485 and RS-232 transceivers are boolean `AND`ed together.
-> This allows the `RX` pin of the Arduino board to receive from both transceivers, but if devices are connected to both interfaces, they could interfere with each other.
->
-> The `TX` signal is connected to both the RS-485 and RS-232 transceivers.
-> Transmitting will send both RS-485 and RS-232 signals on their respecive interfaces.
+> This board is designed to use only one (1) serial interface, RS-485 or RS-232, at a time.
+> Attempting to use both at the same time is unlikely to damage the board, but it could lead to unexpected behavior.
+
+
+### Pinouts
+#### Arduino Pin Usage
+| Pin | Function              | pinMode                                           |
+|-----|-----------------------|---------------------------------------------------|
+| 0   | HardwareSerial RX     | INPUT (Set by HardwareSerial)                     |
+| 1   | HardwareSerial TX     | OUTPUT (Set by HardwareSerial)                    |
+| 2   | Button1 (BTN1)        | INPUT_PULLUP                                      |
+| 3   | Button2 (BTN2)        | INPUT_PULLUP                                      |
+| 5   | LED1 (L1)             | OUTPUT                                            |
+| 6   | LED1 (L2)             | OUTPUT                                            |
+| 7   | LED1 (L3)             | OUTPUT                                            |
+| 8   | LED1 (L4)             | OUTPUT                                            |
+| 10  | SoftwareSerial RX     | INPUT (Set by SoftwareSerial)                     |
+| 11  | SoftwareSerial TX     | OUTPUT (Set by SoftwareSerial)                    |
+| 13  | Driver Enable (DE)    | OUTPUT (set by ModbusRTUSlave or ModbusRTUMaster) |
+| A0  | Potentiometer1 (POT1) | INPUT                                             |
+| A1  | Potentiometer2 (POT2) | INPUT                                             |
+
+_Unused Pins: 4, 9, 12, A2, A3, A4, A5_
+
+#### RS-485 Interface
+| Pin | Function  | Electrical Type |
+|-----|-----------|-----------------|
+| 1   | RS-485 D+ | Bidirectional   |
+| 2   | RS-485 D- | Bidirectional   |
+| 3   | GND       | Passive         |
+
+#### RS-232 Interface
+| Pin | Function  | Electrical Type |
+|-----|-----------|-----------------|
+| 1   | GND       | Passive         |
+| 2   | 5V        | Power Output    |
+| 3   | RS-232 RX | Input           |
+| 4   | RS-232 TX | Output          |
+| 5   | VBUS      | Power Input     |
+| 6   | GND       | Passive         |
+
 
 ### Documentation
 - [Schematic](ModbusRTU-Test-Shield.pdf)
@@ -26,7 +62,7 @@ A shield for Arduino boards that provides an RS-485 transceiver, RS-232 transcei
 
 
 
-## Fabrication
+## Components
 
 ### Circuit Board
 #### Specifications
@@ -59,14 +95,14 @@ Generally you will need to upload the upload the [gerber and drill files](gerber
 | Reference    | Qty | Manufacturer           | Part Number           | Description                         | Notes                                                                                         |
 |--------------|----:|------------------------|-----------------------|-------------------------------------|-----------------------------------------------------------------------------------------------|
 | C1-C6        |   6 | KEMET                  | ESS105M050AB2EA       | 1uF Aluminum Electrolytic Capacitor |                                                                                               |
-| D1-D4, D6-D8 |   7 | Würth Elektronik       | 151031YS06000         | Yellow LED                          | This is used for various indicators.                                                          |
+| D1-D4, D6-D8 |   7 | Würth Elektronik       | 151031YS06000         | Yellow LED                          | These are used for various indicators.                                                        |
 | D5           |   1 | Würth Elektronik       | 151031VS04000         | Green LED                           | This is used to indicate that 5V is present.                                                  |
-| D9, D10      |   2 | Vishay                 | BAT43-TAP             | Schottky Diode                      | This diode is used to `AND` and level convert the `RX` signals from the transceivers.         |
+| D9, D10      |   2 | Vishay                 | BAT43-TAP             | Schottky Diode                      | These diodes are used to `AND` and level convert the `RX` signals from the transceivers.      |
 | D11          |   1 | Vishay                 | SB260S-E3/54          | Schottky Diode                      | This diode allows the Arduino board to be powered through the RS-232 interface.               |
 | J1-J4        |   1 | SparkFun Electronics   | PRT-11417	            | Stacking Socket Header Kit          | This kit contains multiple parts.                                                             |
 | J5           |   1 | Phoenix Contact        | 5434557               | 3-Position Terminal Block Plug      | This screw terminal works with a special pin header and is not soldered to the circuit board. |
 | J6           |   1 | Amphenol ICC (FCI)     | 54601-906WPLF         | RJ12 Jack                           |                                                                                               |
-| R1-R8        |   8 | Stackpole Electronics  | CFM14JT330R           | 330 Ohm Resistor                    | This is a generic 330 Ohm resistor; a smilarly sized component of the same value should work. |
+| R1-R8        |   8 | Stackpole Electronics  | CFM14JT330R           | 330 Ohm Resistor                    | These are generic 330 Ohm resistors; smilarly sized components of the same value should work. |
 | R9           |   1 | Stackpole Electronics  | CFM14JT10K0           | 10K Ohm Resistor                    | This is a generic 10K Ohm resistor; a smilarly sized component of the same value should work. |
 | RV1, RV2     |   2 | Piher/Amphenol         | PT10MV10-103A2020-E-S | 10K Ohm Potentiometer               |                                                                                               |
 | RV1, RV2     |   2 | Piher/Amphenol         | JPEPL6052INI          | Potentiometer Knob                  |                                                                                               |
@@ -112,7 +148,7 @@ If you are assembling the ModbusRTU Test Shield yourself, you will need the foll
 | Isopropyl Alcohol | Maybe    | This is used to remove flux. It is not needed if you are using no-clean flux.                                                                      |
 | Dish Soap         | Maybe    | This is used to remove flux residue. It is not needed if you are using no-clean flux.                                                              |
 
-> **Note on Flux:**  
+> **Note on Flux**  
 > Traditional flux if left on the assembled circuit board could cause some serious issues.
 > It can potentially cause shorts or significant [parasitic capacitance](https://en.wikipedia.org/wiki/Parasitic_capacitance).
 > It is also somewhat corrosive and can, over time, damage your circuit board.
@@ -171,7 +207,7 @@ _You will likely need to install the sockets one at a time._
 
 #### 5. D1-D8 (LEDs)
 > [!NOTE]
-> D5, the `ON` LED is green, all the other ones are yellow.
+> D5, the `ON` LED, is green, all the other ones are yellow.
 
 - Place the LEDs in their respective footprints with the short lead (cathode) going through the squarish pad, and bend the leads on the backside of the board to hold them in place.
 - Solder the leads, then trim them.
@@ -230,6 +266,6 @@ _If you only used no-clean flux, you can skip this step._
 - Carefully instert the chips into the sockets on the board.
   Make sure you don't crumple any pins in this process.
 
-#### 14. Insert J5 (Screw Terminal Block)
-
-#### 15. Insert the Potentiometer Knobs
+#### 14. Finishing Touches
+- Insert the screw terminal block (J5) into its header.
+- Insert the potentiometer knobs.
