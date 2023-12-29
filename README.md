@@ -253,7 +253,7 @@ _You will likely need to install the potentiometers one at a time._
 - Flip the board over and solder all the pins.
 
 #### 12. Clean Flux Off Board
-_If you only used no-clean flux, you can skip this step._
+_If you used no-clean flux, you can skip this step._
 
 > [!NOTE]
 > This step was written with water-soluble flux in mind.  
