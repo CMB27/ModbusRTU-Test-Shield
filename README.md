@@ -2,6 +2,7 @@
 ![ModbusRTU Test Shield Top View](extras/ModbusRTU-Test-Shield-Top-View.png)
 
 A shield for Arduino boards that provides an RS-485 transceiver, RS-232 transceiver, and a selection of buttons, lights, and knobs.
+This board was designed to aid in testing the [ModbusRTUSlave](https://github.com/CMB27/ModbusRTUSlave) and [ModbusRTUMaster](https://github.com/CMB27/ModbusRTUMaster) libraries.
 
 - This shield is designed to work with both 5V and 3.3V Arduino boards.
 - A 3-position removable screw terminal is used as the RS-485 interface.
@@ -13,8 +14,8 @@ A shield for Arduino boards that provides an RS-485 transceiver, RS-232 transcei
 > [!NOTE]
 > This design is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
 > 
-> This board is designed to use only one (1) serial interface, RS-485 or RS-232, at a time.
-> Attempting to use both at the same time is unlikely to damage the board, but it could lead to unexpected behavior.
+> This board is designed to use only one serial interface (RS-485 or RS-232) at a time.
+> Attempting to use both at the same time is unlikely to damage the board, but could lead to unexpected behavior.
 
 
 ### Pinouts
