@@ -38,14 +38,14 @@ This board was designed to aid in testing the [ModbusRTUSlave](https://github.co
 
 _Unused Pins: 4, 9, 12, A2, A3, A4, A5_
 
-#### RS-485 Interface
+#### RS-485 Interface (J5)
 | Pin | Function  | Electrical Type |
 |-----|-----------|-----------------|
 | 1   | RS-485 D+ | Bidirectional   |
 | 2   | RS-485 D- | Bidirectional   |
 | 3   | GND       | Passive         |
 
-#### RS-232 Interface
+#### RS-232 Interface (J6)
 | Pin | Function  | Electrical Type |
 |-----|-----------|-----------------|
 | 1   | GND       | Passive         |
@@ -168,7 +168,7 @@ These steps go through soldering each component, starting with the shortest.
 
 #### 1. R1-R9 (Resistors)
 > [!NOTE]
-> There are two (2) resistor values used.
+> There are two resistor values used.
 > 
 > The 8 resistors furthest from the diode footprints (R1-R8) are 330 Ohm resistors.  
 > The color code on these will be orange, orange, brown, gold.
@@ -208,7 +208,9 @@ _You will likely need to install the sockets one at a time._
 
 #### 5. D1-D8 (LEDs)
 > [!NOTE]
-> D5, the `ON` LED, is green, all the other ones are yellow.
+> The `ON` LED (D5), is green.
+> 
+> All the other LEDs (D1-D4, D6-D8) are yellow.
 
 - Place the LEDs in their respective footprints with the short lead (cathode) going through the squarish pad, and bend the leads on the backside of the board to hold them in place.
 - Solder the leads, then trim them.
