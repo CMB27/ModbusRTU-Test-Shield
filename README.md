@@ -266,6 +266,6 @@ _If you used no-clean flux, you can skip this step._
 - Carefully instert the chips into the sockets on the board.
   Make sure you don't crumple any pins in this process.
 
-#### 14. Finishing Touches
+#### 13. Finishing Touches
 - Insert the screw terminal block (J5) into its header.
 - Insert the potentiometer knobs.
