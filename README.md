@@ -1,5 +1,5 @@
 # ModbusRTU Test Shield
-![ModbusRTU Test Shield Top View](extras/ModbusRTU-Test-Shield-Top-View.png)
+![ModbusRTU Test Shield Top Picture](extras/ModbusRTU-Test-Shield-Top-Picture.jpg)
 
 A shield for Arduino boards that provides an RS-485 transceiver, RS-232 transceiver, and a selection of buttons, lights, and knobs.
 This board was designed to aid in testing the [ModbusRTUSlave](https://github.com/CMB27/ModbusRTUSlave) and [ModbusRTUMaster](https://github.com/CMB27/ModbusRTUMaster) libraries.
@@ -62,7 +62,6 @@ _Unused Pins: 4, 9, 12, A2, A3, A4, A5_
 - [STEP 3D Model](extras/ModbusRTU-Test-Shield.step)
 
 
-
 ## Components
 
 ### Circuit Board
@@ -92,28 +91,29 @@ Generally you will need to upload the upload the [gerber and drill files](gerber
 
 ### Purchase Components
 
-| Reference    | Qty | Manufacturer           | Part Number           | Description                         | Notes                                                                                         |
-|--------------|----:|------------------------|-----------------------|-------------------------------------|-----------------------------------------------------------------------------------------------|
-| C1-C6        |   6 | KEMET                  | ESS105M050AB2EA       | 1uF Aluminum Electrolytic Capacitor |                                                                                               |
-| D1-D4, D6-D8 |   7 | Würth Elektronik       | 151031YS06000         | Yellow LED                          | These are used for various indicators.                                                        |
-| D5           |   1 | Würth Elektronik       | 151031VS04000         | Green LED                           | This is used to indicate that 5V is present.                                                  |
-| D9, D10      |   2 | Vishay                 | BAT43-TAP             | Schottky Diode                      | These diodes are used to `AND` and level convert the `RX` signals from the transceivers.      |
-| D11          |   1 | Vishay                 | SB260S-E3/54          | Schottky Diode                      | This diode allows the Arduino board to be powered through the RS-232 interface.               |
-| J1-J4        |   1 | SparkFun Electronics   | PRT-11417	            | Stacking Socket Header Kit          | This kit contains multiple parts.                                                             |
-| J5           |   1 | Phoenix Contact        | 5434557               | 3-Position Terminal Block Plug      | This screw terminal works with a special pin header and is not soldered to the circuit board. |
-| J6           |   1 | Amphenol ICC (FCI)     | 54601-906WPLF         | RJ12 Jack                           |                                                                                               |
-| R1-R8        |   8 | Stackpole Electronics  | CFM14JT330R           | 330 Ohm Resistor                    | These are generic 330 Ohm resistors; smilarly sized components of the same value should work. |
-| R9           |   1 | Stackpole Electronics  | CFM14JT10K0           | 10K Ohm Resistor                    | This is a generic 10K Ohm resistor; a smilarly sized component of the same value should work. |
-| RV1, RV2     |   2 | Piher/Amphenol         | PT10MV10-103A2020-E-S | 10K Ohm Potentiometer               |                                                                                               |
-| RV1, RV2     |   2 | Piher/Amphenol         | JPEPL6052INI          | Potentiometer Knob                  |                                                                                               |
-| SW1-SW3      |   3 | TE Connectivity        | 1825910-6             | 6mm Pushbutton Switch               | This is a generic 6mm pushbutton switch. Feel free to substitute.                             |
-| SW4          |   1 | C&K                    | OS202011MS2QN1        | DPDT Slide Switch                   |                                                                                               |
-| U1           |   1 | Analog Devices         | LT1785ACN8#PBF        | RS-485 Half-Duplex Transceiver      | This part is used with a socket; DO NOT solder this part to the circuit board.                |
-| U2           |   1 | Texas Instruments      | MAX232N               | RS-232 Transceiver                  | This part is used with a socket; DO NOT solder this part to the circuit board.                |
-| XJ5          |   1 | Phoenix Contact        | 5430438               | 3-Position Terminal Block Header    | This is the socket for the RS-485 screw terminal and is soldered to the circuit board.        |
-| XU1          |   1 | Assmann WSW Components | AR 08-HZL/01-TT       | 8-Position DIP Socket               | This is the socket for the RS-485 transceiver and is soldered to the circuit board.           |
-| XU2          |   1 | Assmann WSW Components | AR 16-HZL/01-TT       | 16-Position DIP Socket              | This is the socket for the RS-232 transceiver and is soldered to the circuit board.           |
+| Reference    | Qty | Manufacturer           | Part Number           | Description                         | Notes                                                                                                                                     |
+|--------------|----:|------------------------|-----------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| C1-C6        |   6 | KEMET                  | ESS105M050AB2EA       | 1uF Aluminum Electrolytic Capacitor |                                                                                                                                           |
+| D1-D4, D6-D8 |   7 | Würth Elektronik       | 151031YS06000         | Yellow LED                          |                                                                                                                                           |
+| D5           |   1 | Würth Elektronik       | 151031VS04000         | Green LED                           |                                                                                                                                           |
+| D9, D10      |   2 | Vishay                 | BAT43-TAP             | Schottky Diode                      |                                                                                                                                           |
+| D11          |   1 | Vishay                 | SB260S-E3/54          | Schottky Diode                      |                                                                                                                                           |
+| J1-J4        |   1 | SparkFun Electronics   | PRT-11417	            | Stacking Socket Header Kit          | This kit contains all the connectors for the Arduino interface.                                                                           |
+| J5           |   1 | Phoenix Contact        | 5434557               | 3-Position Terminal Block Plug      |                                                                                                                                           |
+| J6           |   1 | Amphenol ICC (FCI)     | 54601-906WPLF         | RJ12 Jack                           |                                                                                                                                           |
+| R1-R8        |   8 | Stackpole Electronics  | CFM14JT1K00           | 1K Ohm Resistor                     | These are generic 1K Ohm resistors; smilarly sized components of the same value should work.                                              |
+| R9           |   1 | Stackpole Electronics  | CFM14JT10K0           | 10K Ohm Resistor                    | This is a generic 10K Ohm resistor; a smilarly sized component of the same value should work.                                             |
+| RV1, RV2     |   2 | Piher/Amphenol         | PT10MV10-103A2020-E-S | 10K Ohm Potentiometer               |                                                                                                                                           |
+| RV1, RV2     |   2 | Piher/Amphenol         | JPEPL6052INI          | Potentiometer Knob                  |                                                                                                                                           |
+| SW1-SW3      |   3 | Omron                  | B3F-1020              | 6mm Pushbutton Switch               | This is a generic 6mm pushbutton switch. Feel free to substitute.                                                                         |
+| SW4          |   1 | C&K                    | OS202011MS2QN1        | DPDT Slide Switch                   |                                                                                                                                           |
+| U1           |   1 | Analog Devices         | LT1785ACN8#PBF        | RS-485 Half-Duplex Transceiver      | This is a fairly expensive RS-485 transceiver, but it is what I had on hand. Something like a Renesas ISL81487EIPZ should work just fine. |
+| U2           |   1 | Texas Instruments      | MAX232N               | RS-232 Transceiver                  |                                                                                                                                           |
+| XJ5          |   1 | Phoenix Contact        | 5430438               | 3-Position Terminal Block Header    |                                                                                                                                           |
+| XU1          |   1 | Assmann WSW Components | AR 08-HZL/01-TT       | 8-Position DIP Socket               |                                                                                                                                           |
+| XU2          |   1 | Assmann WSW Components | AR 16-HZL/01-TT       | 16-Position DIP Socket              |                                                                                                                                           |
 
+You may also want termination resistors for RS-485; 120 Ohms is a common value.
 
 #### Suppliers
 Below are some electronics suppliers I have used in the past:
@@ -166,73 +166,70 @@ These steps go through soldering each component, starting with the shortest.
 > It graphically shows where each component goes on the board.
 > You will need to download it in order to view it; GitHub does not render HTML files in repositories.
 
-#### 1. R1-R9 (Resistors)
+#### 1. R1-R9 (Resistors) and D9-D11 (Diodes)
 > [!NOTE]
 > There are two resistor values used.
 > 
-> The 8 resistors furthest from the diode footprints (R1-R8) are 330 Ohm resistors.  
+> The 8 resistors furthest from the diode footprints (R1-R8) are 1K Ohm resistors.  
 > The color code on these will be orange, orange, brown, gold.
 > 
 > The resistor right next to the diode footprints (R9) is a 10K Ohm resistor.  
 > The color code on this resistor will be brown, black, orange, gold.
-
-- Bend the resistor leads so that the part will fit in the footprint.
-- Place the resistors and bend the leads on the backside of the board to hold them in place.
-- On the backside of the board, solder the leads to the pads.
-- Trim the leads using the flush cutters.
-
-#### 2. D9-D11 (Diodes)
-> [!NOTE]
+>
 > Two different diode parts are used on this board.
 > 
 > The smaller signal diodes (D9, D10) are placed next to the resistors.
 > 
 > The larger power diode (D11) is placed right next to the RJ12 footprint.
 
-- Bend the diode leads so they will fit their respective footprints.
-- Place the diodes, making sure that the side with the line closest to it (the cathode) is facing the squarish pad.
-- Bend the leads on the backside of the board to hold the diodes in place.
-- Solder the diode leads to the pads then trim the leads.
+- Bend the compnent leads so that the parts will fit in their footprints.
+- Place the components.
+- Bend the leads on the backside of the board to hold them in place.
+- On the backside of the board, solder the leads to the pads.
+- Trim the leads using the flush cutters.
 
-#### 3. SW1-SW3 (Push-button Switches)
-- Place the switches; these have kinked leads, so they should stay once placed.
-- Turn the board over and solder the switch leads to the board.
-
-#### 4. XU1-XU2 (Integrated Circuit Sockets)
+#### 2. XU1-XU2 (Integrated Circuit Sockets)
 _You will likely need to install the sockets one at a time._
 - Place the socket so that the notch matches up with the notch shown on the circuit board.
 - Flip the board over and solder two pins in opposite corners of the socket.
 - Check that the socket is straight and seated correctly on the board.
-  If everything looks good proceed, otherwise, reheat your solder joints one at a time and adjust the socket position until it looks good.
+  If everything looks good proceed, otherwise, reheat your solder joints one at a time and adjust the socket position.
 - Solder the remaining pins.
 
-#### 5. D1-D8 (LEDs)
+#### 3. SW1-SW3 (Push-button Switches)
+- Place the switches; these have kinked leads, so they should stay once placed.
+- Turn the board over and solder the leads to the board.
+
+#### 4. D1-D8 (LEDs)
 > [!NOTE]
 > The `ON` LED (D5), is green.
 > 
 > All the other LEDs (D1-D4, D6-D8) are yellow.
 
-- Place the LEDs in their respective footprints with the short lead (cathode) going through the squarish pad, and bend the leads on the backside of the board to hold them in place.
-- Solder the leads, then trim them.
+- Place the LEDs in their respective footprints with the short lead (cathode) going through the squarish pad.
+- Bend the leads on the backside of the board to hold them in place.
+- Solder the leads.
+- Trim the leads.
 
-#### 6. RV1-RV2 (Potentiometers)
+#### 5. RV1-RV2 (Potentiometers)
 _You will likely need to install the potentiometers one at a time._
 - Place the potentiometer.
 - Flip the board over and solder the pins.
 
-#### 7. C1-C6 (Capacitors)
-- Place the capacitors, ensuring the `-` symbol on the capacitors is facing away from the `+` symbol on the board.
-  For capacitors, the positive lead goes through the squarish pad and the negative lead goes through the circular pad.
-- Bend the leads on the backside of the board to hold the capacitors in place.
-- Solder the leads, then trim them.
-
-#### 8. XJ5 (Terminal Block Header)
+#### 6. XJ5 (Terminal Block Header)
 - Place the terminal block header.
 - Solder one of the pins.
 - Check the placement of the header; reheat the solder joint and make adjustments if necessary.
 - Solder the remaining pins.
 
-#### 9. J1-J4 (Arduino UNO Interface)
+#### 7. C1-C6 (Capacitors)
+- Place the capacitors, ensuring the `-` symbol on the capacitors is facing away from the `+` symbol on the board.
+  For capacitors, the positive lead goes through the squarish pad and the negative lead goes through the circular pad.
+- Bend the leads on the backside of the board to hold the capacitors in place.
+- Solder the leads.
+- Trim the leads.
+
+#### 8. J1-J4 (Arduino UNO Interface)
 - If you have a shield for the Arduino UNO, place the stacking socket headers on its pins, then place the socket header pins through the holes in the circuit board.
   This will make it easier and faster to install the sockets.
   If you don't have a shield you will likely need to install the sockets one at a time.
@@ -242,17 +239,17 @@ _You will likely need to install the potentiometers one at a time._
 - Solder the remaining pins.
 - If you used a shield, remove it now.
 
-#### 10. SW4 (Slide Switch)
+#### 9. SW4 (Slide Switch)
 - Place the slide switch.
 - Flip the board over and solder two of the smaller pins in opposite corners.
 - Check the placement of the switch, making adjustments as needed.
 - Solder the remaining pins.
 
-#### 11. J6 (RJ12 Jack)
+#### 10. J6 (RJ12 Jack)
 - Place the jack; it should snap in place.
 - Flip the board over and solder all the pins.
 
-#### 12. Clean Flux Off Board
+#### 11. Clean Flux Off Board
 _If you used no-clean flux, you can skip this step._
 
 > [!NOTE]
@@ -263,7 +260,7 @@ _If you used no-clean flux, you can skip this step._
 - Clean the board with dish soap and warm water using the same toothbrush.
 - Dry the board thoroughly. I like to use compressed air for this step.
 
-#### 13. U1-U2 (Integrated Circuits)
+#### 12. U1-U2 (Integrated Circuits)
 - Carefully bend the pins on the ICs so that they are straight up and down.
   I usually use a table surface to bend all the leads on one side of the chip at a time.
 - Carefully instert the chips into the sockets on the board.

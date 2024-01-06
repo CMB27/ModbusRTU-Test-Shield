@@ -513,7 +513,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "../../../../extras/ModbusRTU-Test-Shield.step",
+      "step": "../extras/ModbusRTU-Test-Shield.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
