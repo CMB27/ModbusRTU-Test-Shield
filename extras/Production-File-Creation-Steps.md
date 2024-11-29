@@ -13,7 +13,7 @@ These steps are for use with the [ModbusRTU Test Shield source files](https://gi
 
 ### Generate PDF of Schematic
 - Click on the `Plot` button or `File/Plot...`
-- In the `Plot Schematic Options` window:
+- In the `Plot Schematic Options` window:  
   ![Plot Schematic Options](Plot-Schematic-Options.png)
   - Set the output directory to `../` or in Windows `..\`
   - Set the output format to `PDF`
@@ -40,7 +40,7 @@ These steps are for use with the [ModbusRTU Test Shield source files](https://gi
 
 ### Generate Gerber and Drill Files
 - Click on the `Plot` button or `File/Plot...`
-- In the `Plot` window:
+- In the `Plot` window:  
   ![Plot](Plot.png)
   - Set `Plot Format` to `Gerber`
   - Set `Output directory` to `../gerbers/`
@@ -66,7 +66,7 @@ These steps are for use with the [ModbusRTU Test Shield source files](https://gi
       - `Include netlist attributes`
   - Click `Plot`
   - Click `Generate Drill Files...`
-  - In the `Generate Drill Files` window:
+  - In the `Generate Drill Files` window:  
     ![Generate Drill Files](Generate-Drill-Files.png)
     - Set `Output folder` to `../gerbers/`
     - In `Drill File Format`:
@@ -82,7 +82,7 @@ These steps are for use with the [ModbusRTU Test Shield source files](https://gi
 
 ### Generate STEP File
 - Click `File/Export/STEP...`
-- In the `Export STEP` window:
+- In the `Export STEP` window:  
   ![Export STEP](Export-STEP.png)
   - Set `File` to `../extras/ModbusRTU-Test-Shield.step`
   - In `Coordinates`, select `Drill/place file origin`

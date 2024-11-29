@@ -1,11 +1,11 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,7.0.1*%
-%TF.CreationDate,2024-01-06T16:02:36-05:00*%
-%TF.ProjectId,ModbusRTU-Test-Shield,4d6f6462-7573-4525-9455-2d546573742d,0.1.0*%
+%TF.CreationDate,2024-11-29T14:27:23-05:00*%
+%TF.ProjectId,ModbusRTU-Test-Shield,4d6f6462-7573-4525-9455-2d546573742d,1.0.0*%
 %TF.SameCoordinates,PX6486dd0PY8062360*%
 %TF.FileFunction,Profile,NP*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 7.0.1) date 2024-01-06 16:02:36*
+G04 Created by KiCad (PCBNEW 7.0.1) date 2024-11-29 14:27:23*
 %MOMM*%
 %LPD*%
 G01*

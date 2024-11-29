@@ -1,7 +1,7 @@
 The CK_OS202011MS2QN1 model was provided by C&K (Littelfuse) as a model for OS202011MS2QS1.
 Some surfaces were split and it was recolored, but no geometry changes were made.
 
-The FCI_54601-906WPLF model was provided by Amphenol Communications Solutions.
+The AmphenolFCI_87180-x66lf model was provided by Amphenol Communications Solutions.
 It was recolored, but it is otherwise unchanged.
 
 The Piher_PT10MV10 model was provided by Piher (Amphenol).

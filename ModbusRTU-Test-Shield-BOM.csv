@@ -7,14 +7,14 @@ D5,1,Würth Elektronik,151031VS04000,Green LED
 D11,1,Vishay,SB260S-E3/54,Schottky Diode
 J1-J4,1,SparkFun Electronics,PRT-11417,Stacking Socket Header Kit
 J5,1,Phoenix Contact,5434557,3-Position Terminal Block Plug
-J6,1,Amphenol ICC (FCI),54601-906WPLF,RJ12 Connector
+J6,1,Amphenol ICC (FCI),87180-066LF,RJ12 Connector
 R1-R8,8,Stackpole Electronics,CFM14JT1K00,1K Ohm Resistor
 R9,1,Stackpole Electronics,CFM14JT10K0,10K Ohm Resistor
 "RV1, RV2",2,Piher/Amphenol,PT10MV10-103A2020-E-S,10K Ohm Potentiometer
 "RV1, RV2",2,Piher/Amphenol,JPEPL6052INI,Potentiometer Knob
 SW1-SW3,3,Omron,B3F-1020,6mm Pushbutton Switch
 SW4,1,Amphenol ICC (FCI),OS202011MS2QN1,DPDT Slide Switch
-U1,1,Analog Devices,LT1785ACN8#PBF,RS-485 Half-Duplex Transceiver
+U1,1,Texas Instruments,SN65HVD3082EP,RS-485 Half-Duplex Transceiver
 U2,1,Texas Instruments,MAX232N,RS-232 Transceiver
 XJ5,1,Phoenix Contact,5430438,3-Position Terminal Block Header
 XU1,1,Assmann WSW Components,AR 08-HZL/01-TT,8-Position DIP Socket
